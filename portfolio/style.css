@@ -1,0 +1,19 @@
+/*Hero Page styling*/
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sunset{
+    top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.textafterimg{
+
+    float: right;
+    color: #003399;
+}
