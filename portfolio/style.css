@@ -1,19 +1,32 @@
 /*Hero Page styling*/
 .header{
+    margin-left: 200px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .sunset{
-    top: 100px;
+    margin-top: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
-
 .textafterimg{
-
     float: right;
-    color: #003399;
+    color: #800020	;
+}
+/*About Me Page styling*/
+.AboutPhoto{
+    width: 500px;
+    margin-left: 50px;
+    margin-right: 100px;
+    float: left;
+}
+h2{
+    color: #800020	;
+}
+p{
+    font-size: 18px;
+
 }
