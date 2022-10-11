@@ -17,7 +17,7 @@
     color: #800020	;
 }
 /*About Me Page styling*/
-.AboutPhoto{
+.AboutPhoto, img{
     width: 500px;
     margin-left: 50px;
     margin-right: 100px;
@@ -28,5 +28,9 @@ h2{
 }
 p{
     font-size: 18px;
-
+    margin-right:100px;
+}
+/*Contact Page styling*/
+.contactText{
+    margin-left: 300px;
 }
