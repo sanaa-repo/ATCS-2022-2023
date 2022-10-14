@@ -1,10 +1,16 @@
+body{
+    background-color:rbg(128, 0, 32, 0.4);
+}
 /*Hero Page styling*/
 .header{
     margin-left: 200px;
     margin-bottom: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: black solid 1px;
+    padding: 40px;
 }
 .sunset{
     margin-top: 20vh;
@@ -29,8 +35,21 @@ h2{
 p{
     font-size: 18px;
     margin-right:100px;
+    text-align: center;
 }
 /*Contact Page styling*/
 .contactText{
-    margin-left: 300px;
+    text-align: center;
+}
+.logo{
+    justify-content: left;
+    width: 90px;
+    height: 120px
+    
+}
+.date{
+    text-align: left;
+}
+.content{
+    text-align: right;
 }
