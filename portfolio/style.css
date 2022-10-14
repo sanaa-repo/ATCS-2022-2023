@@ -3,7 +3,6 @@ body{
 }
 /*Hero Page styling*/
 .header{
-    margin-left: 200px;
     margin-bottom: 100px;
     margin-top: 50px;
     display: flex;
@@ -12,6 +11,11 @@ body{
     border: black solid 1px;
     padding: 40px;
 }
+.logo, .header > img{
+    justify-content: left;
+    width: 100px;
+    height: 80px
+}
 .sunset{
     margin-top: 20vh;
     display: flex;
@@ -19,9 +23,21 @@ body{
     align-items: center;
 }
 .textafterimg{
+    font-family: cursive;
     float: right;
     color: #800020	;
+    position: relative;
+    animation-name: spinny;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
+@keyframes spinny {
+    0%   {right:30000px; top:0px;}
+    33%  {right:300px; top:-200px;}
+    66%  {right:300px; top:0px;}
+    100%  {right:300px; top:0px;}
+    
+  }
 /*About Me Page styling*/
 .AboutPhoto, img{
     width: 500px;
@@ -41,15 +57,16 @@ p{
 .contactText{
     text-align: center;
 }
-.logo{
-    justify-content: left;
-    width: 90px;
-    height: 120px
-    
-}
+
 .date{
     text-align: left;
 }
 .content{
+    
     text-align: right;
+}
+hr{
+        height: 1px;
+        background-color: #800020;
+        border: none;
 }
