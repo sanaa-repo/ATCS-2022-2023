@@ -1,28 +1,106 @@
 <!DOCTYPE html>
 <html>
+<!-- Todo: bootstrap XD 
+    Updates:
+    - Scrollspy in nav
+    - How to sticky navbar
 
+
+    -->
 <head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     
+     <!-- Your Personal CSS BELOW this Line -->
     <title> Home - Sanaa Kapur</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <img src="LOGO.png" class="logo">
-    <div class="header">
-        <a href="index.html">Home</a>
-        <a href="About.html">About Me</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <div class="sunset">
-        <img
-            src="data:image/jpeg;base64,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">
-        <div class="textafterimg">
-            <h2>Sanaa Kapur</h2>
-            <p> Student | Computer Scientist | Dreamer</p>
-            
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark mynavbar">
+        <a class="navbar-brand" href="index.html">Sanaa Kapur</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experiences.html">Experiences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
+      </nav>
+      <div class="sunset" id="list-item-1">
+          <img
+              src="FunPhoto.JPEG">
+          <div class="textafterimg">
+              <h2>Sanaa Kapur</h2>
+              <p> Student | Computer Scientist | Dreamer</p>
+              
+          </div>
+      </div>
+      <div class =  "nextbutton row">
+        <a class="btn btn-primary" href="#list-item-2" role="button">About Me</a>
+      </div>
+      <br>
+      <br>
+      <br>
+      
     </div>
+
+    <div class = "jumbotron" id="list-item-2">
+      <h2> About Me</h2>
+      </div>
+      <div class = "abtMe row">
+      <div id="carouselExampleControls" class="carousel slide col-md-6" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-20" src = "PhotoSelf.jpeg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-20" src="YellowPhoto.png" alt="Second slide">
+            </div>
+            </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class = "textandpic col-md-6">
+      <p>Hi! I'm Sanaa Kapur and I am an 11th grade student and aspiring computer scientist.
+          I first started coding when I was 10 as part of a First Lego League robotics team. 
+          I loved the thrill of creating something new and wanted to learned more.
+          Since then, I have explored several programming languages like Java, HTML/CSS,
+          EV3, C++ and Python. I especially enjoy programming robots as it helps me see the 
+          applications of CS to the world at large.
+      </p>
+      <p>
+          When I am not coding, I enjoy practicing Kung Fu, reading, and spending time with my 
+          younger brother.
+      </p>
+    </div>
+  </div>
+  <div class =  "nextbutton row">
+    <a class="btn btn-primary" href="experiences.html" role="button">Experiences</a>
+  </div>
+  <!-- Your Content ABOVE this Line -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

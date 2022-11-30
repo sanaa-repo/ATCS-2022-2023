@@ -1,19 +1,19 @@
 body{
     background-color:rbg(128, 0, 32, 0.4);
 }
-/*Hero Page styling*/
-.header{
-    margin-bottom: 100px;
-    margin-top: 50px;
+.mynavbar, .btn, jumbotron{
+    background-color: deeppink;
+}
+.nav-link, .navbar-brand, .na{
+    color: white;
+}
+.nextbutton{
+    justify-content: center;
+    color: white;
+}
+.abtMe{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 40px;
-}
-.logo, .header > img{
-    justify-content: left;
-    width: 100px;
-    height: 80px
 }
 .sunset{
     margin-top: 20vh;
@@ -21,15 +21,26 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+h2{
+  color: blue;
+}
+.jumbotron{
+  color:deeppink;
+}
 .textafterimg{
-    font-family: cursive;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     float: right;
-    color: #800020	;
+    color: blue	;
     position: relative;
     animation-name: spinny;
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
+.textandpic{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
 @keyframes spinny {
     0%   {right:30000px; top:0px;}
     33%  {right:300px; top:-200px;}
@@ -44,9 +55,7 @@ body{
     margin-right: 100px;
     float: left;
 }
-
 h2 {
-    color: #800020	;
     font-family: cursive;
     animation-name: spin;
     animation-timing-function: linear;
@@ -66,21 +75,4 @@ p{
     font-size: 18px;
     margin-right:100px;
     text-align: center;
-}
-/*Contact Page styling*/
-.contactText{
-    text-align: center;
-}
-
-.date{
-    text-align: left;
-}
-.content{
-    
-    text-align: right;
-}
-hr{
-        height: 1px;
-        background-color: #800020;
-        border: none;
 }

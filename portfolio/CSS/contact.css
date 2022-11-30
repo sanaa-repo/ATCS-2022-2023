@@ -1,0 +1,31 @@
+/*Contact Page styling*/
+.mynavbar, .btn, .jumbotron{
+    background-color: deeppink;
+}
+h2{
+    color: blue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-link, .navbar-brand{
+    color: white;
+}
+.nextbutton{
+    justify-content: center;
+    color: white;
+}
+.contactText{
+    text-align: center;
+}
+
+.date{
+    text-align: left;
+}
+.content{
+    
+    text-align: right;
+}
+hr{
+        height: 1px;
+        background-color: #800020;
+        border: none;
+}
